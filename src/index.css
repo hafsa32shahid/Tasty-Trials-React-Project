@@ -1,0 +1,373 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --btn-bg-col: #edb650;
+    --div-bg-col: #efc79d;
+    --main-text: #050505;
+    --bg-foot-color : #1e1e26;
+    --bg-main : #f7f7f5;
+}
+/* custom css */
+body{
+    background-color: var(--bg-main);
+}
+h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--main-text);
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--main-text);
+}
+p{
+    font-size: 0.9rem;
+    color: #1e1e26;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #1e1e26;
+}
+.padding{
+    padding: 0 40px 0 40px;
+}
+.button{
+    width: 120px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: var(--btn-bg-col) ;
+    border-radius: 20px;
+   box-shadow:
+    0 6px 4px rgba(240, 186, 86, 0.4),
+    0 -2px 6px rgba(240, 186, 86, 0.3);
+ }
+ .button2
+{
+    width: 120px;
+    height: 35px;
+    background-color: transparent ;
+    border: none;
+    outline: 1px solid var(--btn-bg-col);
+    border-radius: 20px;
+    box-shadow:
+    0 6px 4px rgba(240, 186, 86, 0.4),
+    0 -2px 6px rgba(240, 186, 86, 0.3);
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #edb650;
+}
+ /*===============================================================
+  Navbar css all
+=================================================================*/
+.navbar .nav_contain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.logo{
+    max-width: 150px;
+    max-height: 150px;
+}
+.logo a img{
+    width: 100%;
+}
+.navbar-nav .nav-item a{
+   color: var(--bg-foot-color);
+   transition: all 0.5;
+}
+.navbar-nav .nav-item a:hover{
+    color: var(--btn-bg-col);
+    text-decoration: underline 2px var(--btn-bg-col);
+ }
+
+ .nav_search .search-bar{
+    border-radius: 20px;
+    border: 1px solid var(--btn-bg-col);
+ }
+ .nav_search .btn{
+   background-color: #edb650;
+ }
+ .navbar button{
+    background-color: var(--btn-bg-col);
+    border-radius: 20px;
+   box-shadow:
+    0 6px 4px rgba(240, 186, 86, 0.4),
+    0 -2px 6px rgba(240, 186, 86, 0.3);
+
+
+ }
+
+  /*===============================================================
+  Hero css all
+=================================================================*/
+.text-and-img{
+    height: 60px;
+    background-color: var(--div-bg-col);
+    border-radius: 30px;
+    
+}
+.img-text{
+    height: 60px;
+    border-radius: 30px;
+}
+.button-dev{
+    height: auto;
+}
+.button-dev button{
+    width: 150px;
+    height: 50px;
+    background-color: var(--btn-bg-col);
+    border-radius: 20px;
+ }
+ .button-dev .watch-btns button{
+    background-color: cornsilk;
+ }
+ .button-dev .watch-btns button i{
+    color: var(--btn-bg-col);
+ }
+ .client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc; /* Optional: Add a border */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+    overflow: hidden;
+}
+.customer-review{
+    position: relative;
+}
+.cutomer-review .client:nth-child(2){
+    position: relative;
+    left: -20px;
+}
+.cutomer-review .client:nth-child(3){
+    position: relative;
+    left: -35px;
+}
+.cutomer-review .client:nth-child(4){
+    position: relative;
+    left: -45px;
+}
+.client img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.reviews-count .reviews i{
+        color: var(--btn-bg-col);
+}
+/* bg img css for text boxes */
+.bg-box1{
+    background-color: rgba(237, 230, 230, 0.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 20vh;
+}
+.img-text-vert{
+    background-color: rgba(237, 230, 230, 0.5);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 10vh;
+}
+ /*===============================================================
+ services css all
+=================================================================*/
+.services{
+  margin: 5rem 0 5rem 0;
+}
+.serv-img-box{
+height: 400px;
+background-image: url('./assets/img-sm/serve-img2.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+}
+.serv-img-box .service-detail-box{
+    width: 150px;
+    height: 100px;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 20px;
+    background-color: rgba(237, 230, 230, 0.5);
+}
+.service-1 {
+    height: 40px;
+    border-radius: 20px;
+}
+.service-1 .icon-box
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--div-bg-col);
+}
+ /*===============================================================
+ categories of products css all
+=================================================================*/
+.products-cat-buttons{
+    background-color: var(--div-bg-col);
+    padding: 20px;
+    border-radius: 20px;
+}
+.categ-button{
+   width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: white;
+  transition: all 0.3s;
+}
+.categ-btn-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: no-repeat;
+    background-size: cover;
+}
+.active{
+    background-color: var(--btn-bg-col);
+}
+.categ-button:hover{
+    background-color: var(--btn-bg-col);
+    cursor: pointer;
+}
+.card-box{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    background-size: cover;
+}
+.card-detals{
+    max-width: 250px;
+    min-height: 150px;
+    background-color: rgba(237, 230, 230, 0.5);
+    backdrop-filter: blur(4px);
+    top: 150px;
+    border-radius: 20px;
+}
+ /*===============================================================
+ Top Rated Products of products css all
+=================================================================*/
+
+.rated-pro-box {
+  min-height: 80vh;
+  background: url("./assets/img-sm/rating-product-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.rated-pro-box .overlap-img
+{
+  height: 100%;
+  background-color: rgba(34, 29, 29, 0.5);
+  backdrop-filter: blur(3px);
+}
+.top-rate-card{
+    border-radius: 20px;
+}
+.top-card-img{
+  height: 250px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top-card-img .top-card-detail {
+    width: 100%;
+    bottom: 0;
+    color: var(--bg-main);
+    background-color: rgba(34, 29, 29, 0.5);
+    backdrop-filter: blur(2px);
+}
+
+ /*===============================================================
+ chief of tasty trials products css all
+=================================================================*/
+
+
+.chief-box{
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+}
+.chief-detals{
+    width: 200px;
+    min-height: 90px;
+    padding: 10px;
+    background-color: rgba(237, 230, 230, 0.5);
+    backdrop-filter: blur(7px);
+    bottom: 0;
+    border-radius: 20px;
+}
+
+
+ /*===============================================================
+reviews section of products css all
+=================================================================*/
+.cli-img{
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+ /*===============================================================
+ Footer css all
+=================================================================*/
+.logo-box
+{
+  max-width: 200px;
+  max-height: 200px;
+}
+.logo-box img{
+    width: 100%;
+}
+
+.footer-sub{
+    border-radius: 20px;
+    border: 1px solid var(--btn-bg-col);
+}
+.support-email-box .media-links .media{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: 1px solid var(--btn-bg-col);
+    border-radius: 50%;
+    box-shadow: 2px 4px 10px 0.5px var(--btn-bg-col);
+    margin: 0 3px 0 3px;
+    transition: all 0.5;
+}
+.media-links .media a{
+    color: var(--btn-bg-col);
+}
+.media:hover a{
+    color: white;
+}
+.media:hover{
+    background-color: #edb650;
+}
+hr {
+    border: none;
+    border-top: 3px solid; /* Bootstrap red */
+    margin: 1rem auto;
+    opacity: 0.8;
+}

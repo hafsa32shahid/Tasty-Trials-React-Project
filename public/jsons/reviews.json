@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "rating": 5,
+    "image": "https://images.pexels.com/photos/18483769/pexels-photo-18483769/free-photo-of-photo-of-a-smiling-barber.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "review": "Absolutely loved the food! Everything was fresh and delicious. Will definitely be back."
+  },
+  {
+    "id": 2,
+    "name": "Michael Lee",
+    "rating": 4,
+    "image": "https://media.istockphoto.com/id/1311084168/photo/overjoyed-pretty-asian-woman-look-at-camera-with-sincere-laughter.jpg?b=1&s=612x612&w=0&k=20&c=j6JFqJNLKTE7ubhZUsYeTcKh5_5nHgVCvh9qg7f5KzI=",
+    "review": "Great ambiance and fast service. The burgers were juicy and flavorful."
+  },
+  {
+    "id": 3,
+    "name": "Sophie Turner",
+    "rating": 5,
+    "image": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "review": "Tasty Trials never disappoints. Friendly staff and cozy environment."
+  },
+  {
+    "id": 4,
+    "name": "Daniel Kim",
+    "rating": 3,
+    "image": "https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "review": "Food was good, but the wait time was a bit long. Worth the taste though!"
+  },
+  {
+    "id": 5,
+    "name": "Priya Sharma",
+    "rating": 5,
+    "image": "https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "review": "One of the best dining experiences I’ve had. Highly recommend the pasta!"
+  },
+  {
+    "id": 6,
+    "name": "Liam Brown",
+    "rating": 4,
+    "image": "https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?b=1&s=612x612&w=0&k=20&c=hEPh7-WEAqHTHdQtPrfEN9-yYCiPGKvD32VZ5lcL6SU=",
+    "review": "Very nice decor and clean seating area. The desserts were amazing!"
+  }
+]

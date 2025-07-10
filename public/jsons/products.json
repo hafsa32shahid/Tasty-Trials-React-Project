@@ -1,0 +1,222 @@
+{
+  "Dishes": [
+    {
+      "name": "Grilled Chicken Plate",
+      "image": "/products-imgs/dish1.jpg",
+      "price": 12.99,
+      "rating": 5.0,
+      "description": "Juicy grilled chicken served with herbs, rice, and seasonal vegetables."
+    },
+    {
+      "name": "Beef Steak Special",
+      "image": "/products-imgs/dish2.jpg",
+      "price": 18.50,
+      "rating": 3.2,
+      "description": "Tender beef steak grilled to perfection, served with garlic butter sauce."
+    },
+    {
+      "name": "Lamb Chops",
+      "image": "/products-imgs/dish3.jpg",
+      "price": 20.99,
+      "rating": 4.7,
+      "description": "Grilled lamb chops marinated in Mediterranean spices with garlic dip."
+    },
+    {
+      "name": "Spicy Chicken Curry",
+      "image": "/products-imgs/dish4.jpg",
+      "price": 14.75,
+      "rating": 4.4,
+      "description": "Rich and spicy chicken curry served with steamed basmati rice."
+    },
+    {
+      "name": "Paneer Tikka",
+      "image": "/products-imgs/dish5.jpg",
+      "price": 11.00,
+      "rating": 4.5,
+      "description": "Grilled cottage cheese chunks with peppers and Indian spices."
+    },
+    {
+      "name": "Fish & Chips",
+      "image": "/products-imgs/dish6.jpg",
+      "price": 13.50,
+      "rating": 4.7,
+      "description": "Crispy battered fish fillet with fries and tartar sauce."
+    }
+  ],
+  "Salads": [
+    {
+      "name": "Caesar Salad",
+      "image": "/products-imgs/salad1.jpg",
+      "price": 7.25,
+      "rating": 4.6,
+      "description": "Crispy romaine lettuce with parmesan, croutons, and Caesar dressing."
+    },
+    {
+      "name": "Greek Salad",
+      "image": "/products-imgs/salad2.jpg",
+      "price": 8.00,
+      "rating": 4.5,
+      "description": "Cucumbers, tomatoes, onions, olives, and feta in olive oil dressing."
+    },
+    {
+      "name": "Quinoa Avocado Salad",
+      "image": "/products-imgs/salad3.jpg",
+      "price": 9.50,
+      "rating": 4.7,
+      "description": "Healthy quinoa mixed with avocado, tomatoes, corn, and lime."
+    },
+    {
+      "name": "Cobb Salad",
+      "image": "/products-imgs/salad4.jpg",
+      "price": 10.25,
+      "rating": 4.8,
+      "description": "Lettuce, chicken, bacon, avocado, and blue cheese in ranch."
+    },
+    {
+      "name": "Fruit Mix Salad",
+      "image": "/products-imgs/salad5.jpg",
+      "price": 6.75,
+      "rating": 4.6,
+      "description": "Fresh mix of melons, grapes, apples, and kiwi with mint syrup."
+    },
+    {
+      "name": "Chickpea Salad",
+      "image": "/products-imgs/salad6.jpg",
+      "price": 8.30,
+      "rating": 4.9,
+      "description": "Protein-packed chickpeas tossed with onion, herbs, and lemon."
+    }
+  ],
+  "Appetizers": [
+    {
+      "name": "Mozzarella Sticks",
+      "image": "/products-imgs/mozzarella.jpg",
+      "price": 5.99,
+      "rating": 4.5,
+      "description": "Crispy fried mozzarella sticks with tangy marinara sauce."
+    },
+    {
+      "name": "Chicken Wings",
+      "image": "/products-imgs/wings.jpg",
+      "price": 9.50,
+      "rating": 4.8,
+      "description": "Spicy buffalo wings with ranch dip and celery sticks."
+    },
+    {
+      "name": "Spring Rolls",
+      "image": "/products-imgs/spring-rolls.jpg",
+      "price": 6.25,
+      "rating": 4.6,
+      "description": "Vegetable spring rolls served hot with sweet chili sauce."
+    },
+    {
+      "name": "Garlic Bread",
+      "image": "/products-imgs/garlic-bread.jpg",
+      "price": 4.75,
+      "rating": 4.7,
+      "description": "Toasted garlic bread with herbs and cheese topping."
+    },
+    {
+      "name": "Stuffed Mushrooms",
+      "image": "/products-imgs/mushrooms.jpg",
+      "price": 7.00,
+      "rating": 4.9,
+      "description": "Baked mushrooms filled with cheese and herbs."
+    },
+    {
+      "name": "Nachos with Cheese",
+      "image": "/products-imgs/nachos.jpg",
+      "price": 6.80,
+      "rating": 4.6,
+      "description": "Tortilla chips loaded with melted cheese, jalapeños, and salsa."
+    }
+  ],
+  "Soups": [
+    {
+      "name": "Tomato Basil Soup",
+      "image": "/products-imgs/tomato.jpg",
+      "price": 4.75,
+      "rating": 4.5,
+      "description": "Smooth tomato soup blended with fresh basil and cream."
+    },
+    {
+      "name": "Chicken Noodle Soup",
+      "image": "/products-imgs/chicken-noodle.jpg",
+      "price": 5.25,
+      "rating": 4.8,
+      "description": "Warm chicken broth with noodles, carrots, and herbs."
+    },
+    {
+      "name": "Cream of Mushroom",
+      "image": "/products-imgs/cream-mushroom.jpg",
+      "price": 5.80,
+      "rating": 4.6,
+      "description": "Thick mushroom soup with cream and buttered croutons."
+    },
+    {
+      "name": "Lentil Soup",
+      "image": "/products-imgs/lentil.jpg",
+      "price": 4.95,
+      "rating": 4.7,
+      "description": "Hearty lentil soup spiced with cumin and coriander."
+    },
+    {
+      "name": "Sweet Corn Soup",
+      "image": "/products-imgs/corn-soup.jpg",
+      "price": 5.50,
+      "rating": 4.6,
+      "description": "Creamy corn soup with vegetables and light seasoning."
+    },
+    {
+      "name": "French Onion Soup",
+      "image": "/products-imgs/onion-soup.jpg",
+      "price": 6.00,
+      "rating": 4.9,
+      "description": "Caramelized onions in broth with cheesy toast topping."
+    }
+  ],
+  "Desserts": [
+    {
+      "name": "Chocolate Lava Cake",
+      "image": "/products-imgs/lava-cake.jpg",
+      "price": 6.50,
+      "rating": 4.9,
+      "description": "Warm chocolate cake with a gooey center and vanilla scoop."
+    },
+    {
+      "name": "Strawberry Cheesecake",
+      "image": "/products-imgs/cheesecake.jpg",
+      "price": 6.75,
+      "rating": 4.7,
+      "description": "Creamy cheesecake topped with strawberries and glaze."
+    },
+    {
+      "name": "Gulab Jamun",
+      "image": "/products-imgs/gulab-jamun.jpg",
+      "price": 4.50,
+      "rating": 4.8,
+      "description": "Indian milk balls soaked in rose-scented sugar syrup."
+    },
+    {
+      "name": "Brownie Delight",
+      "image": "/products-imgs/brownie.jpg",
+      "price": 5.25,
+      "rating": 4.7,
+      "description": "Chocolate brownie with nuts and ice cream on top."
+    },
+    {
+      "name": "Tiramisu Slice",
+      "image": "/products-imgs/tiramisu.jpg",
+      "price": 7.00,
+      "rating": 4.8,
+      "description": "Italian layered dessert with coffee and mascarpone."
+    },
+    {
+      "name": "Fruit Custard",
+      "image": "/products-imgs/fruit-custard.jpg",
+      "price": 4.75,
+      "rating": 4.6,
+      "description": "Chilled mixed fruit custard with jelly and cream."
+    }
+  ]
+}
