@@ -15,7 +15,8 @@ const Reviews = () => {
   }, []);
     return (
         <>
-            <div className="container-fluid">
+            <section id='testimonials'>
+                <div className="container-fluid">
                 <div className="review-detail text-center">
                     <h1 className="fw-bold">Customer Experience</h1>
                     <p>
@@ -80,6 +81,7 @@ const Reviews = () => {
                     </Swiper>
                 </div>
             </div>
+            </section>
         </>
     );
 };

@@ -29,7 +29,8 @@ const CategoriesPro = () => {
     }
   }, [activeCategory, allProducts]);
   return (
-    <div className='container-fluid'>
+    <section id='categories'>
+      <div className='container-fluid'>
       <h1 className='fw-bold text-center'>What We Are Offering <br /> To Our Clients</h1>
       <p className='text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, error provident? Beatae veniam aspernatur ex itaque, maiores provident. <br />
         magnam praesentium quia officiis non officia cupiditate unde quae! Odit.</p>
@@ -129,6 +130,7 @@ const CategoriesPro = () => {
         </div>
       </div>
     </div>
+    </section>
 
   )
 }

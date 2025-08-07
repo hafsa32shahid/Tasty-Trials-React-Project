@@ -3,6 +3,15 @@ import logo from '../assets/img-sm/logo_2.png'
 import Button from './smCompo/Button';
 import { animate } from 'framer-motion';
 function Navbar() {
+  const navLinks = [
+    { label: "Home", target: "#home" },
+    { label: "Services", target: "#services" },
+    { label: "Categories", target: "#categories" },
+    { label: "Top Dishes", target: "#top-dishes" },
+    { label: "Testimonials", target: "#testimonials" }
+  ];
+
+
   const input_anim = {
     initial: {
       width: 0,
@@ -23,8 +32,11 @@ function Navbar() {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid padding">
-          <a className="navbar-brand logo" href="#"><img src={logo} alt="" className=' w-100' /></a>
+        <div className="container-fluid px-3 px-md-4">
+          <a className="navbar-brand logo" href="#">
+            <img src={logo} alt="Logo" className="w-100" />
+          </a>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -34,90 +46,69 @@ function Navbar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav m-auto">
-              <li className="nav-item m-3">
-                <a className="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li className="nav-item m-3 dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+
+          <div className="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
+             <ul className="navbar-nav m-auto text-center">
+  {navLinks.map((item, index) => (
+    <li className="nav-item m-2 m-lg-3" key={index}>
+      <a className="nav-link" href={item.target}>
+        {item.label}
+      </a>
+    </li>
+  ))}
+</ul>
+
+
+            <div className="d-flex flex-column flex-lg-row align-items-center gap-3 mt-3 mt-lg-0">
+              {/* Search Form */}
+              <motion.form
+                className="nav_search d-flex position-relative align-items-center"
+                role="search"
+                initial="initial"
+                whileHover="animate"
+                style={{ width: "fit-content" }}
+              >
+                <motion.div
+                  variants={input_anim}
+                  className="overflow-hidden"
+                  style={{ height: "40px" }}
                 >
-                  Menu
-                </a>
-                <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">All Dishes</a></li>
-                  <li><a className="dropdown-item" href="#">Starters</a></li>
-                  <li><a className="dropdown-item" href="#">Main Course</a></li>
-                  <li><a className="dropdown-item" href="#">Desserts</a></li>
-                  <li><a className="dropdown-item" href="#">Drinks & Beverages</a></li>
-                  <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#">Chef's Specials</a></li>
-                </ul>
+                  <input
+                    className="form-control search-bar shadow-none h-100"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    style={{
+                      borderRadius: "20px",
+                      borderRight: "none",
+                    }}
+                  />
+                </motion.div>
 
-              </li>
-              <li className="nav-item m-3">
-                <a className="nav-link" href='#'>Cuisine</a>
-              </li>
-              <li className="nav-item m-3">
-                <a className="nav-link" href='#'>Location</a>
-              </li>
-              <li className="nav-item m-3">
-                <a className="nav-link" href='#'>Contact</a>
-              </li>
-            </ul>
-            <motion.form
-              className="nav_search d-flex position-relative align-items-center"
-              role="search"
-              initial="initial"
-              whileHover="animate"
-              style={{ width: "fit-content" }}
-            >
-              {/* Animated input wrapper */}
-              <motion.div
-                variants={input_anim}
-                className="overflow-hidden"
-                style={{
-                  height: "40px",
-                }}
-              >
-                <input
-                  className="form-control search-bar shadow-none h-100"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
+                <motion.button
+                  initial={{ opacity: 1 }}
+                  type="button"
+                  className="btn position-absolute end-0 h-100 border-0 rounded-circle shadow-none"
                   style={{
-                    borderRadius: "20px",
-                    borderRight: "none",
+                    width: "40px",
+                    height: "40px",
+                    right: "0",
+                    zIndex: 2,
                   }}
-                />
-              </motion.div>
+                >
+                  <i className="fa-solid fa-magnifying-glass"></i>
+                </motion.button>
+              </motion.form>
 
-              {/* Always visible search button */}
-              <motion.button
-                initial={{ opacity: 1 }}
-                type="button"
-                className="btn position-absolute end-0 h-100 border-0 rounded-circle shadow-none"
-                style={{
-                  width: "40px",
-                  height: "40px",
-                  right: "0",
-                  zIndex: 2,
-                }}
-              >
-                <i className="fa-solid fa-magnifying-glass"></i>
-              </motion.button>
-            </motion.form>
-            <Button className="btn ms-lg-3 mt-sm-3 mt-lg-0 button" />
+              {/* CTA Button */}
+              <Button className="btn ms-lg-3 button" />
+            </div>
           </div>
         </div>
       </nav>
+
     </>
   );
 }

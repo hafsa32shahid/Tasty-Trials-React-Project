@@ -28,7 +28,8 @@ const Services = () => {
   };
 
   return (
-    <div className="services container-fluid">
+    <section id='services'>
+      <div className="services container-fluid">
       <div className="row">
         <motion.div
           ref={ref}
@@ -72,28 +73,29 @@ const Services = () => {
             </div>
 
 
-           <div className="row mt-5 justify-content-center w-100">
-  {[
-    "fa-cart-shopping",
-    "fa-asterisk",
-    "fa-comments",
-    "fa-first-order-alt",
-  ].map((icon, i) => (
-    <div className="col-sm-6 col-12 mt-4 d-flex justify-content-center" key={i}>
-      <div className="service-1 w-75 shadow d-flex align-items-center justify-content-between bg-light overflow-hidden px-3 py-2">
-        <div className="icon-box me-3 d-flex align-items-center justify-content-center" style={{ width: "40px", height: "40px" }}>
-          <i className={`fa-solid ${icon} fs-5`}></i>
-        </div>
-        <p className="fw-bolder mb-0 me-2">Lorem ipsum dolor sit.</p>
-      </div>
-    </div>
-  ))}
-</div>
+            <div className="row mt-5 justify-content-center w-100">
+              {[
+                "fa-cart-shopping",
+                "fa-asterisk",
+                "fa-comments",
+                "fa-first-order-alt",
+              ].map((icon, i) => (
+                <div className="col-sm-6 col-12 mt-4 d-flex justify-content-center" key={i}>
+                  <div className="service-1 w-75 shadow d-flex align-items-center justify-content-between bg-light overflow-hidden px-3 py-2">
+                    <div className="icon-box me-3 d-flex align-items-center justify-content-center" style={{ width: "40px", height: "40px" }}>
+                      <i className={`fa-solid ${icon} fs-5`}></i>
+                    </div>
+                    <p className="fw-bolder mb-0 me-2">Lorem ipsum dolor sit.</p>
+                  </div>
+                </div>
+              ))}
+            </div>
 
           </div>
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

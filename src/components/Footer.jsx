@@ -21,24 +21,22 @@ const Footer = () => {
                         <h3 className="fw-bold">Links</h3>
                         <ul className="navbar-nav text-center">
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="#">Home</a>
+                                <a className="nav-link text-white" href="#home">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="#">Menu</a>
+                                <a className="nav-link text-white" href="#services">Services</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="#">Cuisine</a>
+                                <a className="nav-link text-white" href="#categories">Categories</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="#">Location</a>
+                                <a className="nav-link text-white" href="#top-dishes">Top Dishes</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-white" href="#">About</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link text-white" href="#">Contact</a>
+                                <a className="nav-link text-white" href="#testimonials">Testimonials</a>
                             </li>
                         </ul>
+
                     </div>
                 </div>
 

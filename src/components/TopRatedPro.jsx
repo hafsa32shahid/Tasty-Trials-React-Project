@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import bgimg from '../assets/img-sm/cards-img1.jpg'
 const TopRatedPro = () => {
   const [topRatedProducts, setTopRatedProducts] = useState([]);
@@ -28,59 +28,61 @@ const TopRatedPro = () => {
   const visibleProducts = topRatedProducts.slice(start, start + productsPerPage);
 
   return (
-    <div className='container-fluid my-4'>
-      <div className="next-prev d-flex justify-content-end gap-4 my-5">
-        <button className='button' style={{ width: "40px", height: "40px" }} onClick={handlePrev}>
-          <i className="fa-solid fa-arrow-left"></i>
-        </button>
-        <button className='button2' style={{ width: "40px", height: "40px" }} onClick={handleNext}>
-          <i className="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
+    <section id='top-dishes'>
+      <div className='container-fluid my-4'>
+        <div className="next-prev d-flex justify-content-end gap-4 my-5">
+          <button className='button' style={{ width: "40px", height: "40px" }} onClick={handlePrev}>
+            <i className="fa-solid fa-arrow-left"></i>
+          </button>
+          <button className='button2' style={{ width: "40px", height: "40px" }} onClick={handleNext}>
+            <i className="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
 
-      <div className="rated-pro-box">
-        <div className="overlap-img p-5">
-          <div className="container-fluid">
-            <div className="row">
-              {visibleProducts.map((product, index) => (
-                <div className="col-lg-4 col-sm-6 my-2" key={index}>
-                  <div className="card top-rate-card">
-                    <div className="top-card-img position-relative"
-                    style={{
-                            backgroundImage: product.image
-                              ? `url(${product.image})`
-                              : `url(${bgimg})`
-                          }}
+        <div className="rated-pro-box">
+          <div className="overlap-img p-5">
+            <div className="container-fluid">
+              <div className="row">
+                {visibleProducts.map((product, index) => (
+                  <div className="col-lg-4 col-sm-6 col-12 my-2" key={index}>
+                    <div className="card top-rate-card">
+                      <div className="top-card-img position-relative"
+                        style={{
+                          backgroundImage: product.image
+                            ? `url(${product.image})`
+                            : `url(${bgimg})`
+                        }}
 
 
-                    >
-                     
-                      <div className="top-card-detail position-absolute px-3">
-                        <span className='fw-bold fs-6'>{product.name}</span>
-                        <div className="rating my-2">
-                          <span className='fw-bold me-3'>{product.rating}</span>
-                          {Array.from({ length: 5 }).map((_, i) => (
-                            <i
-                              key={i}
-                              className={`fa-star ${i < Math.round(product.rating) ? 'fa-solid text-warning' : 'fa-regular text-muted'}`}
-                            ></i>
-                          ))}
+                      >
 
+                        <div className="top-card-detail position-absolute px-3">
+                          <span className='fw-bold fs-6'>{product.name}</span>
+                          <div className="rating my-2">
+                            <span className='fw-bold me-3'>{product.rating}</span>
+                            {Array.from({ length: 5 }).map((_, i) => (
+                              <i
+                                key={i}
+                                className={`fa-star ${i < Math.round(product.rating) ? 'fa-solid text-warning' : 'fa-regular text-muted'}`}
+                              ></i>
+                            ))}
+
+                          </div>
+                          <span><b>$</b>{product.price.toFixed(2)}</span>
                         </div>
-                        <span><b>$</b>{product.price.toFixed(2)}</span>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
-              {visibleProducts.length === 0 && (
-                <div className="text-center">No top-rated products found.</div>
-              )}
+                ))}
+                {visibleProducts.length === 0 && (
+                  <div className="text-center">No top-rated products found.</div>
+                )}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
